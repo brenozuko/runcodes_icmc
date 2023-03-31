@@ -6,8 +6,13 @@ def womenPrefers(w, m, m1, prefer):
 
 
 def stableMarriage(prefer):
-    mFree = [False for i in range(len(prefer))]
-    wPartner = [-1 for i in range(len(prefer))]
+    manFree = [False for i in range(len(prefer))]
+    womanPartner = [-1 for i in range(len(prefer))]
+
+
+
+    while False in manFree:
+        pass
     pass
 
 
