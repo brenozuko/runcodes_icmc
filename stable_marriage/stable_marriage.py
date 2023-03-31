@@ -1,26 +1,24 @@
 t = int(input())
 
 
-def womenPrefers(w, m, m1, prefer):
-    pass
-
-
-def stableMarriage(prefer):
-    manFree = [False for i in range(len(prefer))]
-    womanPartner = [-1 for i in range(len(prefer))]
-
-
-
-    while False in manFree:
-        pass
+def stableMarriage(men_pref, women_pref, n):
     pass
 
 
 for j in range(t):
+    # Numero de homens e mulheres
     n = int(input())
-    prefer = []
+    men_pref = []
+    women_pref = []
 
-    for i in range(2 * n):
-        prefer.append(input().split())
+    for i in range(n):
+        input_line = input().split()
+        aux_list = [int(y) for y in input_line[1:]]
+        women_pref.append(aux_list)
 
-    stableMarriage(prefer)
+    for i in range(n):
+        input_line = input().split()
+        aux_list = [int(y) for y in input_line[1:]]
+        men_pref.append(aux_list)
+
+    stableMarriage(men_pref, women_pref, n)
